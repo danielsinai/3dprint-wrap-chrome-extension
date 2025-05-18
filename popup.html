@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Print Wrap Importer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+      }
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 100%;
+      }
+      .button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+      .status {
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 4px;
+      }
+      .success {
+        background-color: #dff0d8;
+        color: #3c763d;
+      }
+      .error {
+        background-color: #f2dede;
+        color: #a94442;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>3D Print Wrap Importer</h1>
+    <p>Extract 3D print data from makerworld.com and import to app.3dprintwrap.com</p>
+    <button id="extractBtn" class="button">Extract Print Data</button>
+    <div id="status" class="status" style="display: none;"></div>
+    <script src="popup.js"></script>
+  </body>
+</html> 
